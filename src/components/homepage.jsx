@@ -1,3 +1,4 @@
+import Features from "./features";
 import Navbar from "./navbar";
 import Sponsors from "./sponsors";
 import Litre_Tracker from "./your_litre_tracker";
@@ -9,6 +10,7 @@ const Homepage=()=>{
             <Navbar/>
             <Litre_Tracker/>
             <Sponsors/>
+            <Features/>
 
         </div>
     );
