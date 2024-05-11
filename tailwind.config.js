@@ -18,6 +18,8 @@ module.exports = {
         'testimonial_position_name':'#111827',
         'testimonial_position_title':'#374151',
         'star_border':'#F8D57E',
+        'switch_bg':'#D1D1D6',
+        'swtich_color':'#1DC9A0',
       }
     },
   },
