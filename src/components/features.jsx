@@ -16,7 +16,7 @@ const Features=()=>{
                     classnames='lg:mr-[30px]'
                     feature_image={require('../asserts/features/digital_work.png')}
                     title={'Digitized Work Processes'}
-                    text_info={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
+                    text_info={'Optimize Efficiency: Streamline Operations with Our Innovative Digital Solutions for Enhanced Productivity.'}
                     learn_more_text='learn more'
                     learn_more_img={require('../asserts/features/arrow_right.png')}
                     item={1}
@@ -25,7 +25,7 @@ const Features=()=>{
                     classnames='lg:mr-[30px]'
                     feature_image={require('../asserts/features/daily_account.png')}
                     title={'Daily Account Reconciliation'}
-                    text_info={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
+                    text_info={'Stay Financially On Track: Simplifying Daily Account Reconciliation for Your Gas Station Business.'}
                     learn_more_text='learn more'
                     learn_more_img={require('../asserts/features/arrow_right.png')}
                     item={3}
@@ -33,7 +33,7 @@ const Features=()=>{
                     <Feature_Card
                     feature_image={require('../asserts/features/detailed_report.png')}
                     title={'Detailed Reports'}
-                    text_info={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}
+                    text_info={'In-Depth Insights: Gain a Comprehensive Understanding of Your Gas Station Operations with Detailed Reports.'}
                     learn_more_text='learn more'
                     learn_more_img={require('../asserts/features/arrow_right.png')}
                     item={4}

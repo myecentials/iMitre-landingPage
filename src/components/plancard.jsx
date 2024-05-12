@@ -13,15 +13,12 @@ const Plancard=({class_assigned,plan_type,price,duration,is_enterprise=false,inf
 
             <div className={`${!isMonthly?'hidden':''} xs:mb-[24px] md:mb-[0px] lg:mb-[24px] lg:mt-[6px] text-text_color flex flex-row items-center justify-start`}>
                 <p className={`${is_enterprise?'text-white':''} text-[16px] `}>
-                {info_after_trial_1}
+                First 30 days free - Then <strong>GHC {info_after_trial_1}</strong> / month
                 </p>
-                <p className={`${is_enterprise?'text-white':''} text-[16px] xs:mx-[1.7px] `}>
-                    - Then
-                </p>
-                <p className={`${is_enterprise?'text-white':''} text-[16px] poppins-bold  `}>
+                {/* <p className={`${is_enterprise?'text-white':''} text-[16px] poppins-bold  `}>
                 {info_after_trial_2}
-                </p>
-                <p className={`${is_enterprise?'text-white':''} text-[16px]`}>{isMonthly?'/month':'/year'}</p>
+                </p> */}
+            
             </div>
 
             {
