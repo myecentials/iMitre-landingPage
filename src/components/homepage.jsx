@@ -12,10 +12,10 @@ const Homepage=()=>{
 
             <Navbar/>
             <Litre_Tracker/>
-            <Sponsors/>
+            {/* <Sponsors/> */}
             <Features/>
             <Store_Section/>
-            <Testimonials/>
+            {/* <Testimonials/> */}
             <Selectplan/>
 
         </div>

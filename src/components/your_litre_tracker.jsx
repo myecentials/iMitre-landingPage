@@ -8,7 +8,7 @@ const Litre_Tracker=()=>{
 
                 <h2 className="md:translate-x-[40px] lg:translate-x-0 text-text_color  capitalize poppins-bold xs:text-[38px] xs:w-[50%] xs:translate-x-[50%] md:w-auto md:text-[67px] xs:text-center lg:text-left xs:mb-[20px] md:mb-0">Your Litre Tracker!</h2>
 
-            <p className="md:translate-x-[40px] lg:translate-x-0 tracking-[0.94px] md:w-[90%] lg:w-[98%] text-text_color text-[21px] leading-[31.5px] xs:text-center lg:text-left xs:mb-[30px] md:mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor et dolore magna aliqua!</p>
+            <p className="md:translate-x-[40px] lg:translate-x-0 tracking-[0.94px] md:w-[90%] lg:w-[92%] text-text_color text-[21px] leading-[31.5px] xs:text-center lg:text-left xs:mb-[30px] md:mb-0">Streamlining Gas Station Management: Your Comprehensive Solution for Tracking, Monitoring, and Streamlining Daily Operations with Precision and Ease.</p>
 
             <section className='xs:mt-[30px] xs:mb-[40px] lg:mt-[40px] lg:mb-[0px] lg:w-full flex flex-row-reverse items-center justify-end xs:translate-x-[41%] md:translate-x-[110%] lg:translate-x-0'>
             <ButtonComponent

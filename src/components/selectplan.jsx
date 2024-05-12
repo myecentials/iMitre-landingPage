@@ -70,19 +70,21 @@ class_assigned='text-text_color xs:py-[40px] xs:px-[30px] lg:px-[20px] bg-white 
 plan_type={'Starter'}
 price={isMonthly?'GHC 150':'GHC 1500'}
 duration={isMonthly?'month':'year'}
-info_after_trial_1={'First 30 days free '}
-info_after_trial_2={'GHC 150'}
+// info_after_trial_1={'First 30 days free - Then '}
+info_after_trial_1={'150'}
+info_after_trial_2={`GHC 150 ${isMonthly?'/month':'/year'}`}
 isMonthly={isMonthly}
 plan_content={Starter_List}
 />
 
 <Plancard
-class_assigned='text-text_color xs:py-[40px] xs:px-[30px] lg:px-[20px] bg-white border border-homepage_bg xs:w-full md:w-[680px] lg:w-[370px] md:h-[609px] lg:h-auto rounded-[20px] lg:gap-[30px] lg:mr-[30px] xs:mb-[30px] md:mb-[20px] lg:mb-[0px]'
+class_assigned='text-text_color xs:py-[40px] xs:px-[30px] lg:px-[20px] bg-white border border-homepage_bg xs:w-full md:w-[680px] lg:w-[370px] md:h-auto lg:h-auto rounded-[20px] lg:gap-[30px] lg:mr-[30px] xs:mb-[30px] md:mb-[20px] lg:mb-[0px]'
 plan_type={'Professional'}
 price={isMonthly?'GHC 500':'GHC 5000'}
 duration={isMonthly?'month':'year'}
-info_after_trial_1={'First 30 days free '}
-info_after_trial_2={'GHC 500'}
+// info_after_trial_1={'First 30 days free - Then '}
+info_after_trial_1={'500'}
+info_after_trial_2={`GHC 500 ${isMonthly?'/month':'/year'}`}
 isMonthly={isMonthly}
 plan_content={Professional_List}
 />
@@ -93,8 +95,9 @@ plan_type={'Enterprise'}
 price={isMonthly?'GHC 600':'GHC 6000'}
 duration={isMonthly?'month':'year'}
 is_enterprise={true}
-info_after_trial_1={'First 30 days free '}
-info_after_trial_2={'GHC 600'}
+// info_after_trial_1={'First 30 days free - Then '}
+info_after_trial_1={'600'}
+info_after_trial_2={`GHC 600 ${isMonthly?'/month':'/year'}`}
 isMonthly={isMonthly}
 plan_content={Enterprise_List}
 />

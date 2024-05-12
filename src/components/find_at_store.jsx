@@ -37,7 +37,7 @@ export default function Store_Section(){
                 Get The iMitre App on the App Store or Play Store  Today!
                 </h2>
                 <p className='xs:text-center md:text-left md:mt-[40px] md:mb-[40px] lg: mb-0 lg:mt-[20px] text-text_color xs:text-[16px] md:text-[20px] lg:text-[19px]'>
-                Break the Figma limits and explore the endless possibilities with Anima.
+                Download the iMitre App Now for Seamless Gas Station Management Anywhere, Anytime!
                 </p>
 
                 <section className='xs:mb-[60px] md:mb-0 xs:mt-[40px] md:mt-[0px] lg:mt-[40px] xs:w-[315px] xs:h-[41px] md:w- lg:w-[400px] lg:h-[52px] lg:gap-[40px] flex flex-row items-center justify-between'>
