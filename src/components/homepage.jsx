@@ -1,5 +1,6 @@
 import Features from "./features";
 import Store_Section from "./find_at_store";
+import Getintouch from "./get_in_touch";
 import Navbar from "./navbar";
 import Selectplan from "./selectplan";
 import Sponsors from "./sponsors";
@@ -17,6 +18,7 @@ const Homepage=()=>{
             <Store_Section/>
             {/* <Testimonials/> */}
             <Selectplan/>
+            <Getintouch/>
 
         </div>
     );
