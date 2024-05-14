@@ -1,5 +1,6 @@
 import Features from "./features";
 import Store_Section from "./find_at_store";
+import Footerlandingpage from "./footer";
 import Getintouch from "./get_in_touch";
 import Navbar from "./navbar";
 import Selectplan from "./selectplan";
@@ -19,6 +20,7 @@ const Homepage=()=>{
             {/* <Testimonials/> */}
             <Selectplan/>
             <Getintouch/>
+            <Footerlandingpage/>
 
         </div>
     );
