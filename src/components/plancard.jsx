@@ -23,7 +23,7 @@ const Plancard=({class_assigned,plan_type,price,duration,is_enterprise=false,inf
 
             {
                 Array.isArray(plan_content) && plan_content?.map((item,index)=>(
-                    <div className={`w-auto flex flex-row items-center justify-start ${index >0 ?'xs:mt-[16px]':''}`}>
+                    <div key={index} className={`w-auto flex flex-row items-center justify-start ${index >0 ?'xs:mt-[16px]':''}`}>
                         <img
                         src={is_enterprise?require('../asserts/white_tick.png') :require('../asserts/tick.png')}
                         alt='tick'
