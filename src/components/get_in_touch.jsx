@@ -5,6 +5,7 @@ import Swal from 'sweetalert2'
 export default function Getintouch(){
     const full_name = useRef('')
     const email = useRef('')
+    const message=useRef('')
     const [loading,setLoading] = useState(false)
     const Variants = {
         initial:{
@@ -35,6 +36,7 @@ export default function Getintouch(){
             })
             full_name.current.value=''
             email.current.value=''
+            message.current.value=''
         setLoading(false)
 
         }, 1000);
@@ -49,7 +51,7 @@ export default function Getintouch(){
         viewport={{once:true}}
         className="md:mx-[18px] bg-homepage_bg xs:py-[50px] md:px-[32px] ">
 
-            <div className="xs:bg-white border border-bg_gray xs:p-[40px] lg:p-[60px] xs:h-[737px] md:h-[664px] lg:h-[473px] md:w-auto xs:rounded-[20px] xs:mx-[30px] md:mx-0">
+            <div className="xs:bg-white border border-bg_gray xs:p-[40px] lg:p-[60px] xs:h-[898px] md:h-[855px] lg:h-[634px] md:w-auto xs:rounded-[20px] xs:mx-[30px] md:mx-0">
 
                 <h2 className="poppins-bold xs:text-[38px] text-text_color xs:mb-[10px]">
                 Let's get in touch!
@@ -60,18 +62,18 @@ export default function Getintouch(){
 
                 <div className="xs:mt-[20px] md:mt-0 transition-all duration-300 ease-in-out w-full flex xs:flex-col lg:flex-row  lg:items-center lg:justify-center">
 
-                <div className="w-full lg:-translate-y-[30px] transition-all duration-300 ease-in-out">
+                <div className="w-full lg:h-[371px] flex flex-col items-start justify-between lg:-translate-y-[30px] transition-all duration-300 ease-in-out">
 
                 <div className="w-full">
 
-                    <a href='tel:0555988405' className="xs:mb-[20px] flex flex-row items-start  justify-start">
+                    <a href='tel:0268977129' className="xs:mb-[20px] flex flex-row items-start  justify-start">
                         
                         <img
                         src={require('../asserts/PhoneCall.png')}
                         alt='PhoneCall'
                         className='w-[24px] h-[24px] mr-[20px]'
                         />
-                        <p className='text-text_color text-[16px]'>+233 550 XX XX</p>
+                        <p className='text-text_color text-[16px]'>+233 268 XX XX</p>
 
 
                     </a>
@@ -122,7 +124,7 @@ export default function Getintouch(){
                 </div>
 
 
-                <form onSubmit={submitEmail} className='xs:my-[40px] lg:my-[0px]  md:h-auto'>
+                <form id="form" onSubmit={submitEmail} className='xs:my-[40px] lg:my-[0px]  md:h-auto'>
 
                     <div className='xs:mb-[10px] flex flex-row items-center justify-start xs:w-[235px] md:w-[600px] xs:h-[60px] md:gap-[12px] rounded-[20px] border border-sponsor_border xs:py-[8px] xs:px-[20px]'>
 
@@ -140,7 +142,7 @@ export default function Getintouch(){
                      />
                     </div>
 
-                    <div className='xs:mb-[20px] flex flex-row items-center justify-start xs:w-[235px] md:w-[600px] md:h-[60px] xs:h-[60px] md:gap-[12px] rounded-[20px] border border-sponsor_border xs:py-[8px] xs:px-[20px]'>
+                    <div className='xs:mb-[10px] flex flex-row items-center justify-start xs:w-[235px] md:w-[600px] md:h-[60px] xs:h-[60px] md:gap-[12px] rounded-[20px] border border-sponsor_border xs:py-[8px] xs:px-[20px]'>
 
                     <img
                     src={require('../asserts/emailinput.png')}
@@ -157,6 +159,21 @@ export default function Getintouch(){
 
                      />
                     </div>
+
+                    {/* width: 600px;
+height: 151px;
+padding: 19.5px 513px 107.5px 20px;
+gap: 12px;
+border-radius: 20px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px; */}
+
+                    <textarea
+                    ref={message}
+                    className='xs:w-[235px] md:w-[600px] xs:mb-[20px]  xs:mt-[10px] md:h-[151px] xs:rounded-[20px] xs:gap-[12px] border border-sponsor_border xs:p-[20px] outline-none resize-none' 
+                    placeholder='Message'
+                    required
+                    />
 
 
 

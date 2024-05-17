@@ -31,7 +31,9 @@ return(
 
         <section className='lg:w-[559px] h-[60px] gap-[50px] flex flex-row items-center justify-center'>
 
-            <p style={{fontWeight:'600px',lineHeight:'24px',textAlign:'center'}} className='xs:hidden lg:block text-imitregreen cursor-pointer poppins-medium lg:w-[66px] lg:h-[24px]  text-[16px] leading-[24px]'>
+            <p onClick={()=>{
+                document.getElementById('form').scrollIntoView({ behavior: 'smooth' })
+            }} style={{fontWeight:'600px',lineHeight:'24px',textAlign:'center'}} className='xs:hidden lg:block text-imitregreen cursor-pointer poppins-medium lg:w-[66px] lg:h-[24px]  text-[16px] leading-[24px]'>
                 Contact
             </p>
 
