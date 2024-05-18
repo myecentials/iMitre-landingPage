@@ -78,14 +78,14 @@ export default function Getintouch(){
 
                     </a>
                     
-                    <a href='mailto:suport@imitre.com' className="md:mb-[20px] flex flex-row items-start justify-start">
+                    <a href='mailto:support@imitre.com' className="md:mb-[20px] flex flex-row items-start justify-start">
                         
                         <img
                         src={require('../asserts/EnvelopeSimple.png')}
                         alt='Mail'
                         className='w-[24px] h-[24px] mr-[20px]'
                         />
-                        <p className='text-text_color text-[16px]'>suport@imitre.com</p>
+                        <p className='text-text_color text-[16px]'>support@imitre.com</p>
 
 
                     </a>
