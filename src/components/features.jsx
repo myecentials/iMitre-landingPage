@@ -10,7 +10,7 @@ const Features=()=>{
                 <p className="lg:pt-[20px] text-center xs:w-[90%] w-[100%] text-text_color ">We make it easy to track the transactions in your gas station, these are a few among many features we provide.</p>
 
                 {/* card container */}
-                <section className="xs:mt-[30px] md:mt-[40px] lg:pt-[60px] w-full flex xs:flex-col lg:flex-row items-center justify-center">
+                <section className="xs:mt-[30px] md:mt-[40px] lg:pt-[60px] w-full lg:flex-wrap flex xs:flex-col lg:flex-row items-center justify-center">
 
                     <Feature_Card
                     classnames='lg:mr-[30px]'
@@ -34,6 +34,35 @@ const Features=()=>{
                     feature_image={require('../asserts/features/detailed_report.png')}
                     title={'Detailed Reports'}
                     text_info={'In-Depth Insights: Gain a Comprehensive Understanding of Your Gas Station Operations with Detailed Reports.'}
+                    learn_more_text='learn more'
+                    learn_more_img={require('../asserts/features/arrow_right.png')}
+                    item={4}
+                    />
+
+
+<Feature_Card
+                    classnames='lg:mr-[30px] lg:mt-[60px]'
+                    feature_image={require('../asserts/features/hrm.png')}
+                    title={'HRM'}
+                    text_info={'Enhance Employee Administration with Comprehensive Tools for Payroll, Attendance Tracking, Shift Scheduling, and Performance Management, Simplifying Operations for Your Gas Station Business.'}
+                    learn_more_text='learn more'
+                    learn_more_img={require('../asserts/features/arrow_right.png')}
+                    item={1}
+                    />
+                    <Feature_Card
+                    classnames='lg:mr-[30px] lg:mt-[60px]'
+                    feature_image={require('../asserts/features/exp_management.png')}
+                    title={'Expense Management'}
+                    text_info={'Our Expense Management System Ensures Accurate Tracking and Analysis of Expenditures, Empowering Your Gas Station Business for Financial Success.'}
+                    learn_more_text='learn more'
+                    learn_more_img={require('../asserts/features/arrow_right.png')}
+                    item={3}
+                    />
+                    <Feature_Card
+                    classnames='lg:mt-[60px]'
+                    feature_image={require('../asserts/features/multiple_branches.png')}
+                    title={'Multiple Branches'}
+                    text_info={'Seamlessly Coordinate and Monitor Operations Across Multiple Gas Station Locations with Our Comprehensive and User-Friendly Platform.'}
                     learn_more_text='learn more'
                     learn_more_img={require('../asserts/features/arrow_right.png')}
                     item={4}
