@@ -40,7 +40,7 @@ const Features=()=>{
                     />
 
 
-<Feature_Card
+                    <Feature_Card
                     classnames='lg:mr-[30px] lg:mt-[60px]'
                     feature_image={require('../asserts/features/hrm.png')}
                     title={'HRM'}
@@ -63,6 +63,34 @@ const Features=()=>{
                     feature_image={require('../asserts/features/multiple_branches.png')}
                     title={'Multiple Branches'}
                     text_info={'Seamlessly Coordinate and Monitor Operations Across Multiple Gas Station Locations with Our Comprehensive and User-Friendly Platform.'}
+                    learn_more_text='learn more'
+                    learn_more_img={require('../asserts/features/arrow_right.png')}
+                    item={4}
+                    />
+
+<Feature_Card
+                    classnames='lg:mr-[30px] lg:mt-[60px]'
+                    feature_image={require('../asserts/features/stock_tracking.png')}
+                    title={'Stock Tracking'}
+                    text_info={'Our Stock Tracking System Provides Real-Time Updates and Analysis, Ensuring Your Gas Station Always Has the Right Inventory Levels for Smooth Operations.'}
+                    learn_more_text='learn more'
+                    learn_more_img={require('../asserts/features/arrow_right.png')}
+                    item={1}
+                    />
+                    <Feature_Card
+                    classnames='lg:mr-[30px] lg:mt-[60px]'
+                    feature_image={require('../asserts/features/activity_log.png')}
+                    title={'Activity Log'}
+                    text_info={' Keep a Detailed Record of All Activities, Shift Changes, and Transactions for Enhanced Accountability and Efficiency in Your Gas Station Management.'}
+                    learn_more_text='learn more'
+                    learn_more_img={require('../asserts/features/arrow_right.png')}
+                    item={3}
+                    />
+                    <Feature_Card
+                    classnames='lg:mt-[60px]'
+                    feature_image={require('../asserts/features/manage_creditors.png')}
+                    title={'Manage Creditors'}
+                    text_info={'Simplify Tracking and Payments for Creditors, Ensuring Smooth Transactions and Maintaining Strong Relationships for Your Gas Station Business.'}
                     learn_more_text='learn more'
                     learn_more_img={require('../asserts/features/arrow_right.png')}
                     item={4}
