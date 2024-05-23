@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { PulseLoader } from 'react-spinners'
 import {useRef,useState} from 'react'
 import Swal from 'sweetalert2'
+import axios from 'axios'
 export default function Getintouch(){
     const full_name = useRef('')
     const email = useRef('')
@@ -23,21 +24,41 @@ export default function Getintouch(){
     const submitEmail=(e)=>{
         e.preventDefault()
         setLoading(true)
-        setTimeout(() => {
+        setTimeout(async() => {
+            const {REACT_APP_BASE_URL} = process.env
+            await axios.post(`${REACT_APP_BASE_URL}/Landing_page/`,{
+                user_name:full_name?.current.value,
+                user_email:email?.current.value,
+                user_message:message?.current.value,
+            }).then((response)=>{
 
-            Swal.fire({
-                'icon':'success',
-                'title':'details received',
-                'text':"We'll contact you shortly",
-                timerProgressBar:true,
-                timer:1000,
-                showConfirmButton:false,
-                showCancelButton:false
+                Swal.fire({
+                    'icon':'success',
+                    'title':'details received',
+                    'text':"We'll contact you shortly",
+                    timerProgressBar:true,
+                    timer:1000,
+                    showConfirmButton:false,
+                    showCancelButton:false
+                })
+            }).catch((e)=>{
+                console.log(e)
+                Swal.fire({
+                    'icon':'error',
+                    'title':'An errorr occurred',
+                    'text':"Please try again later",
+                    timerProgressBar:true,
+                    timer:1000,
+                    showConfirmButton:false,
+                    showCancelButton:false
+                })
+            }).finally(()=>{
+
+                full_name.current.value=''
+                email.current.value=''
+                message.current.value=''
+            setLoading(false)
             })
-            full_name.current.value=''
-            email.current.value=''
-            message.current.value=''
-        setLoading(false)
 
         }, 1000);
     }
