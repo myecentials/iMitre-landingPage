@@ -26,7 +26,13 @@ export default function Getintouch(){
         setLoading(true)
         setTimeout(async() => {
             const {REACT_APP_BASE_URL} = process.env
-            await axios.post(`${REACT_APP_BASE_URL}/Landing_page/`,{
+            var url =''
+            if(window.location.hostname ==='imitre.com'){
+                url='https://imitre.com'
+            }else{
+                url='http://127.0.0.1:8000'
+            }
+            await axios.post(`${url}/Landing_page/`,{
                 user_name:full_name?.current.value,
                 user_email:email?.current.value,
                 user_message:message?.current.value,
