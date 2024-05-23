@@ -27,11 +27,11 @@ export default function Getintouch(){
         setTimeout(async() => {
             const {REACT_APP_BASE_URL} = process.env
             var url =''
-            if(window.location.hostname ==="imitre-backend-cn8ls.ondigitalocean.app"){
-                url='https://imitre-backend-cn8ls.ondigitalocean.app'
-            }else{
-                url='http://127.0.0.1:8000'
-            }
+            url='https://imitre-backend-cn8ls.ondigitalocean.app'
+            // if(window.location.hostname ==="imitre-backend-cn8ls.ondigitalocean.app"){
+            // }else{
+            //     url='http://127.0.0.1:8000'
+            // }
             await axios.post(`${url}/Landing_page/`,{
                 user_name:full_name?.current.value,
                 user_email:email?.current.value,
