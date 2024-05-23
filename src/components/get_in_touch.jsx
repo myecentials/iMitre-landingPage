@@ -28,7 +28,7 @@ export default function Getintouch(){
             const {REACT_APP_BASE_URL} = process.env
             var url =''
             if(window.location.hostname ==='imitre.com'){
-                url='https://imitre.com'
+                url='https://imitre-backend-cn8ls.ondigitalocean.app'
             }else{
                 url='http://127.0.0.1:8000'
             }
