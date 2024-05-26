@@ -49,17 +49,17 @@ export default function Getintouch(){
                 })
             }).catch((e)=>{
                 console.log(e)
-                Swal.fire({
-                    'icon':'error',
-                    'title':'An errorr occurred',
-                    'text':"Please try again later",
-                    timerProgressBar:true,
-                    timer:1000,
-                    showConfirmButton:false,
-                    showCancelButton:false
-                })
+                // Swal.fire({
+                //     'icon':'error',
+                //     'title':'An errorr occurred',
+                //     'text':"Please try again later",
+                //     timerProgressBar:true,
+                //     timer:1000,
+                //     showConfirmButton:false,
+                //     showCancelButton:false
+                // })
             }).finally(()=>{
-
+                window.location.reload()
                 full_name.current.value=''
                 email.current.value=''
                 message.current.value=''
