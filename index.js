@@ -21,10 +21,6 @@ const transporter = nodemailer.createTransport({
 app.use(express.static(path.join(__dirname,'build')))
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
-app.get('/',((req,res)=>{
-    res.sendFile(path.join(__dirname,'build','index.html'))
-}))
-
 
 app.post('/email',(async(req,res)=>{
     try{
@@ -63,6 +59,10 @@ app.post('/email',(async(req,res)=>{
 
 
 }))
+app.get('/',((req,res)=>{
+    res.sendFile(path.join(__dirname,'build','index.html'))
+}))
+
 app.listen(PORT,()=>{
     console.log('Listening on port 4000')
 })
