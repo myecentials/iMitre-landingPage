@@ -22,6 +22,9 @@ app.use(express.static(path.join(__dirname,'build')))
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
+app.get('/get_try_link',(req,res)=>{
+    res.send("Server is running")
+})
 app.post('/email',(async(req,res)=>{
     try{
 
