@@ -38,7 +38,7 @@ export default function Reactivateaccount() {
                 error.current=true
                 Swal.fire({
                     icon:e.response.data==='Account already reactivated.'?'warning':'error',
-                    title:e.response.data.toString().split('.')[0],
+                    title:'Account is already active',
                     text:e.response.data.toString().split('.')[1],
                     showCancelButton:false,
                     showCloseButton:false,

@@ -17,7 +17,7 @@ export default function Deactivateaccount() {
         e.preventDefault()
         setLoading(true)
         setTimeout(async() => {
-            await axios.post('https://imitre-backend-cn8ls.ondigitalocean.app/Deactivateaccount/',{
+            await axios.post('https://imitre-backend-cn8ls.ondigitalocean.app/deactivateaccount/',{
                 "email":email.current.value,
                 "password":password.current.value,
             }).then((response)=>{
