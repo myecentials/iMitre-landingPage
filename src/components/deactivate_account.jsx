@@ -94,12 +94,17 @@ className=' outline-none w-full'
 
 <div className='xs:mb-[20px] flex flex-row items-center justify-start xs:w-auto md:w-auto md:h-auto xs:h-auto md:gap-[12px] rounded-[20px] border border-sponsor_border xs:py-[8px] xs:px-[20px]'>
 
-<img
+{/* <img
 src={require('../asserts/emailinput.png')}
 alt='user'
 width="29px"
 height="20px"
-/>
+/> */}
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 text-[#59B9A8]">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+</svg>
+
+
 <input
 className=' outline-none w-full'
  placeholder='Password'
