@@ -21,7 +21,9 @@ opacity: 0px; */}
             © {current_year} iMitre. 
             </p>
 
-            <div className="xs:mb-[20px] md:mb-0 lg:w-[128px] lg:gap-[16px] flex lg:flex-row items-center justify-center">
+            <a rel="noreferrer" href="https://drive.google.com/file/d/1BvS6kPK5s0GOtccSrdXF0Dn40uwHkQst/view?usp=sharing" target="_blank" className="xs:my-1 text-white text-[14px] lg:w-[92px] xs:ml-[6.5px] md:ml-0">Privacy Policy</a>
+
+            <div className="xs:my-[10px] md:mb-0 lg:w-[128px] lg:gap-[16px] flex lg:flex-row items-center justify-center">
             <img
             src={require('../asserts/footer/play.png')}
             alt='play'
