@@ -36,8 +36,8 @@ const Feature_Card=({classnames='',feature_image='',title='',text_info,learn_mor
         </p>
 
 
-        <div className="xs:mt-[33px] cursor-pointer lg:pt-[3px] lg:w-[50%] flex flex-row items-center justify-center">
-        <p className="text-learn_more poppins-semibold text-[16px] text-center">{learn_more_text}</p>
+        <div onClick={()=>window.open('https://play.google.com/store/apps/details?id=com.imitre.org.gh&hl=en')} className="xs:mt-[33px] cursor-pointer lg:pt-[3px] lg:w-[50%] flex flex-row items-center justify-center">
+        <p onClick={()=>window.open('https://play.google.com/store/apps/details?id=com.imitre.org.gh&hl=en')} className="text-learn_more poppins-semibold text-[16px] text-center">{learn_more_text}</p>
         <img
         src={learn_more_img}
         alt='learn_more_img'
