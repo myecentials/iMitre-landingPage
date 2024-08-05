@@ -37,7 +37,7 @@ const Plancard=({class_assigned,plan_type,price,duration,is_enterprise=false,inf
             }
 
 
-            <button className={`${is_enterprise?'bg-white':'bg-bg_gray'} xs:mt-[30px]  lg:mt-[30px] lg:gap-[8px] rounded-[20px] md:mb-[40px] lg:mb-0 lg:py-[16px] lg:px-[50px] xs:w-full lg:w-[310px] h-[60px] flex flex-row items-center justify-center`}>
+            <button onClick={()=>window.open('https://play.google.com/store/apps/details?id=com.imitre.org.gh&hl=en')} className={`${is_enterprise?'bg-white':'bg-bg_gray'} xs:mt-[30px]  lg:mt-[30px] lg:gap-[8px] rounded-[20px] md:mb-[40px] lg:mb-0 lg:py-[16px] lg:px-[50px] xs:w-full lg:w-[310px] h-[60px] flex flex-row items-center justify-center`}>
 
                 <p className='text-learn_more text-[16px]'>Get Started</p>
 

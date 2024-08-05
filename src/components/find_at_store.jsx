@@ -48,6 +48,7 @@ export default function Store_Section(){
             width={'180px'}
             height={'52px'}
             className='xs:w-[139px] lg:w-[180px] xs:h-[41px] lg:h-[52px] cursor-pointer transition-all duration-300 ease-in-out hover:scale-110'
+            onClick={()=>window.open('https://play.google.com/store/apps/details?id=com.imitre.org.gh&hl=en')}
             />
 
             <img
